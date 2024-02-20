@@ -5,6 +5,7 @@ import 'package:focusfriends/premium.dart';
 import 'package:focusfriends/profile.dart';
 import 'package:focusfriends/game_pages/all_games.dart';
 import 'package:focusfriends/game_pages/category_games.dart';
+import 'package:focusfriends/trophy.dart';
 
 class GamesPage extends StatefulWidget {
   @override
@@ -32,6 +33,14 @@ class _GamesPageState extends State<GamesPage> {
         );
         break;
       case 2:
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => TrophyPage(),
+          ),
+        );
+        break;
+      case 3:
         Navigator.push(
           context,
           MaterialPageRoute(
@@ -193,6 +202,14 @@ class _GamesPageState extends State<GamesPage> {
                       color: Colors.grey,
                       width: 1.0,
                     ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Color(0x33000000),
+                        offset: Offset(0, 0),
+                        blurRadius: 18,
+                        spreadRadius: 0,
+                      ),
+                    ],
                   ),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(12.0),
@@ -214,6 +231,14 @@ class _GamesPageState extends State<GamesPage> {
                       color: Colors.grey,
                       width: 1.0,
                     ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Color(0x33000000),
+                        offset: Offset(0, 0),
+                        blurRadius: 18,
+                        spreadRadius: 0,
+                      ),
+                    ],
                   ),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(12.0),
@@ -262,6 +287,14 @@ class _GamesPageState extends State<GamesPage> {
                       color: Colors.grey,
                       width: 1.0,
                     ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Color(0x33000000),
+                        offset: Offset(0, 0),
+                        blurRadius: 18,
+                        spreadRadius: 0,
+                      ),
+                    ],
                   ),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(12.0),
@@ -283,6 +316,14 @@ class _GamesPageState extends State<GamesPage> {
                       color: Colors.grey,
                       width: 1.0,
                     ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Color(0x33000000),
+                        offset: Offset(0, 0),
+                        blurRadius: 18,
+                        spreadRadius: 0,
+                      ),
+                    ],
                   ),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(12.0),
@@ -358,6 +399,14 @@ class _GamesPageState extends State<GamesPage> {
                       color: Colors.grey,
                       width: 1.0,
                     ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Color(0x33000000),
+                        offset: Offset(0, 0),
+                        blurRadius: 18,
+                        spreadRadius: 0,
+                      ),
+                    ],
                   ),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(12.0),
@@ -379,6 +428,14 @@ class _GamesPageState extends State<GamesPage> {
                       color: Colors.grey,
                       width: 1.0,
                     ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Color(0x33000000),
+                        offset: Offset(0, 0),
+                        blurRadius: 18,
+                        spreadRadius: 0,
+                      ),
+                    ],
                   ),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(12.0),
@@ -427,6 +484,14 @@ class _GamesPageState extends State<GamesPage> {
                       color: Colors.grey,
                       width: 1.0,
                     ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Color(0x33000000),
+                        offset: Offset(0, 0),
+                        blurRadius: 18,
+                        spreadRadius: 0,
+                      ),
+                    ],
                   ),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(12.0),
@@ -448,6 +513,14 @@ class _GamesPageState extends State<GamesPage> {
                       color: Colors.grey,
                       width: 1.0,
                     ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Color(0x33000000),
+                        offset: Offset(0, 0),
+                        blurRadius: 18,
+                        spreadRadius: 0,
+                      ),
+                    ],
                   ),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(12.0),
@@ -503,6 +576,14 @@ class _GamesPageState extends State<GamesPage> {
                     color: Colors.grey,
                     width: 1.0,
                   ),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Color(0x33000000),
+                      offset: Offset(0, 0),
+                      blurRadius: 18,
+                      spreadRadius: 0,
+                    ),
+                  ],
                 ),
                 child: Image.asset(
                   'assets/images/premiumgec.png',
@@ -551,6 +632,14 @@ class _GamesPageState extends State<GamesPage> {
                       color: Colors.grey,
                       width: 1.0,
                     ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Color(0x33000000),
+                        offset: Offset(0, 0),
+                        blurRadius: 18,
+                        spreadRadius: 0,
+                      ),
+                    ],
                   ),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(12.0),
@@ -572,6 +661,14 @@ class _GamesPageState extends State<GamesPage> {
                       color: Colors.grey,
                       width: 1.0,
                     ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Color(0x33000000),
+                        offset: Offset(0, 0),
+                        blurRadius: 18,
+                        spreadRadius: 0,
+                      ),
+                    ],
                   ),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(12.0),
@@ -620,6 +717,14 @@ class _GamesPageState extends State<GamesPage> {
                       color: Colors.grey,
                       width: 1.0,
                     ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Color(0x33000000),
+                        offset: Offset(0, 0),
+                        blurRadius: 18,
+                        spreadRadius: 0,
+                      ),
+                    ],
                   ),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(12.0),
@@ -641,6 +746,14 @@ class _GamesPageState extends State<GamesPage> {
                       color: Colors.grey,
                       width: 1.0,
                     ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Color(0x33000000),
+                        offset: Offset(0, 0),
+                        blurRadius: 18,
+                        spreadRadius: 0,
+                      ),
+                    ],
                   ),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(12.0),
@@ -676,13 +789,14 @@ class _GamesPageState extends State<GamesPage> {
                 ),
               ],
             ),
-            SizedBox(height: 100),
+            SizedBox(height: 50),
           ],
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
         onTap: onTabTapped,
+        fixedColor: Colors.blue,
         items: [
           BottomNavigationBarItem(
             icon: Image.asset(
@@ -699,6 +813,14 @@ class _GamesPageState extends State<GamesPage> {
               height: 30,
             ),
             label: 'İstatistik',
+          ),
+          BottomNavigationBarItem(
+            icon: Image.asset(
+              'assets/images/trophy.png',
+              width: 30,
+              height: 30,
+            ),
+            label: 'Ödüllerim',
           ),
           BottomNavigationBarItem(
             icon: Image.asset(

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 import 'package:focusfriends/profile.dart';
 import 'package:focusfriends/game_pages/games.dart';
+import 'package:focusfriends/trophy.dart';
 
 class StatPage extends StatefulWidget {
   @override
@@ -29,6 +30,14 @@ class _StatPageState extends State<StatPage> {
         );
         break;
       case 2:
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => TrophyPage(),
+          ),
+        );
+        break;
+      case 3:
         Navigator.push(
           context,
           MaterialPageRoute(
@@ -404,6 +413,7 @@ class _StatPageState extends State<StatPage> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
         onTap: onTabTapped,
+        fixedColor: Colors.blue,
         items: [
           BottomNavigationBarItem(
             icon: Image.asset(
@@ -420,6 +430,14 @@ class _StatPageState extends State<StatPage> {
               height: 30,
             ),
             label: 'İstatistik',
+          ),
+          BottomNavigationBarItem(
+            icon: Image.asset(
+              'assets/images/trophy.png',
+              width: 30,
+              height: 30,
+            ),
+            label: 'Ödüllerim',
           ),
           BottomNavigationBarItem(
             icon: Image.asset(

@@ -6,6 +6,7 @@ import 'package:focusfriends/profilinfo.dart';
 import 'package:focusfriends/settings.dart';
 import 'package:focusfriends/about.dart';
 import 'package:focusfriends/contact.dart';
+import 'package:focusfriends/trophy.dart';
 
 class ProfilePage extends StatefulWidget {
   @override
@@ -13,7 +14,7 @@ class ProfilePage extends StatefulWidget {
 }
 
 class _ProfilePageState extends State<ProfilePage> {
-  int _currentIndex = 0;
+  int _currentIndex = 3;
   void onTabTapped(int index) {
     switch (index) {
       case 0:
@@ -33,6 +34,14 @@ class _ProfilePageState extends State<ProfilePage> {
         );
         break;
       case 2:
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => TrophyPage(),
+          ),
+        );
+        break;
+      case 3:
         Navigator.push(
           context,
           MaterialPageRoute(
@@ -311,6 +320,7 @@ class _ProfilePageState extends State<ProfilePage> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
         onTap: onTabTapped,
+        fixedColor: Colors.blue,
         items: [
           BottomNavigationBarItem(
             icon: Image.asset(
@@ -327,6 +337,14 @@ class _ProfilePageState extends State<ProfilePage> {
               height: 30,
             ),
             label: 'İstatistik',
+          ),
+          BottomNavigationBarItem(
+            icon: Image.asset(
+              'assets/images/trophy.png',
+              width: 30,
+              height: 30,
+            ),
+            label: 'Ödüllerim',
           ),
           BottomNavigationBarItem(
             icon: Image.asset(
