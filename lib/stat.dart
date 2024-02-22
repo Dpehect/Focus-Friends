@@ -387,7 +387,7 @@ class _StatPageState extends State<StatPage> {
                     Container(
                       margin: EdgeInsets.only(left: 21),
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(12),
+                        borderRadius: BorderRadius.circular(102),
                       ),
                       child: LinearPercentIndicator(
                         width: 296.0,

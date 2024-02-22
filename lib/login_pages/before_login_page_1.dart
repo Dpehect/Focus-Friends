@@ -61,6 +61,7 @@ class _LoginPage1State extends State<LoginPage1> {
                       child: Text('Giriş Yap'),
                     ),
                   ),
+                  SizedBox(width: 10),
                   Expanded(
                     child: ElevatedButton(
                       onPressed: () {
@@ -100,7 +101,12 @@ class _LoginPage1State extends State<LoginPage1> {
                     child: Row(
                       children: [
                         SizedBox(width: 14),
-                        Icon(Icons.mail_outline, color: Colors.grey),
+                        Image.asset(
+                          'assets/images/mail.png',
+                          width: 24,
+                          height: 24,
+                          color: Colors.grey,
+                        ),
                         SizedBox(width: 10),
                         Expanded(
                           child: TextField(
@@ -132,10 +138,10 @@ class _LoginPage1State extends State<LoginPage1> {
                       children: [
                         SizedBox(width: 14),
                         Image.asset(
-                          'assets/images/password.png',
+                          'assets/images/passwordlogin.png',
                           width: 24,
                           height: 24,
-                          color: Colors.black,
+                          color: Colors.grey,
                         ),
                         SizedBox(width: 10),
                         Expanded(

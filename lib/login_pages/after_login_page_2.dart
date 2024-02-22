@@ -119,8 +119,9 @@ class _AfterLoginPage2State extends State<AfterLoginPage2> {
                     });
                   },
                   child: EllipseWidget(
-                    ellipseColor:
-                        selectedGender == 'male' ? Colors.red : Colors.white,
+                    ellipseColor: selectedGender == 'male'
+                        ? Colors.red
+                        : Color(0xFFFFE1E1),
                     text: 'M',
                     showText: false,
                   ),
@@ -143,8 +144,9 @@ class _AfterLoginPage2State extends State<AfterLoginPage2> {
                     });
                   },
                   child: EllipseWidget(
-                    ellipseColor:
-                        selectedGender == 'female' ? Colors.red : Colors.white,
+                    ellipseColor: selectedGender == 'female'
+                        ? Colors.red
+                        : Color(0xFFFFE1E1),
                     text: 'F',
                     showText: false,
                   ),
@@ -317,12 +319,12 @@ class _AfterLoginPage2State extends State<AfterLoginPage2> {
 class EllipseWidget extends StatelessWidget {
   final Color ellipseColor;
   final String text;
-  final bool showText; // New property to determine whether to show text or not
+  final bool showText;
 
   EllipseWidget({
     required this.ellipseColor,
     required this.text,
-    this.showText = true, // Default is true
+    this.showText = true,
   });
 
   @override
@@ -342,7 +344,7 @@ class EllipseWidget extends StatelessWidget {
                   color: Colors.white,
                 ),
               )
-            : null, // Only show text if showText is true
+            : null,
       ),
     );
   }
